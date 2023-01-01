@@ -1,0 +1,128 @@
+class time:
+    def __init__(self,seconds):
+        self.seconds=seconds
+        print("Entered seconds",self.seconds)
+    def convert_to_minutes(self):
+        t=self.seconds
+        minutes=t//60
+        seconds=t%60
+        return(str(minutes)+":"+str(seconds))
+    def convert_to_hours(self):
+        n=self.seconds
+        m=n%60
+        hours=n//3600
+        minutes=(n//60)%60
+        return(str(hours)+":"+str(minutes)+":"+str(m))
+t=time(150)
+print(f'Enter seconds{t.seconds} in minutes {t.convert_to_minutes()} and in hours {t.convert_to_hours()}')
+
+
+
+word count program
+
+ilist=list(map(str,input("Enter list of words separated by whitespace:").split()))
+count=dict()
+for word in ilist:
+    if word in count:
+        count[word]+=1
+    else:
+        count[word]=1
+for i in count:
+    print(i,":",count[i])
+
+
+
+palindrome program
+
+s=input("enter a word")
+reverse=(s[::-1])
+if reverse==s:
+    print("its pahoe")
+else:
+    print("edsdhf")
+    
+employee details using multiple inheritance
+class person:
+    def person_info(self,name,age):
+        print("person info")
+        print("name",name,"age",age)
+class company:  
+    def company_info(self,company,location):
+        print("company info")
+        print("company",company,"location",location)
+class employee(person,company):
+    def employee_info(self,salary,skill):
+        print("foh")
+        print("salary",salary,"skill",skill)
+emp=employee()
+emp.person_info("raju",28)
+emp.company_info("dfh","isehfeosd")
+emp.employee_info(233,"jdijf")
+
+Marks add and average
+
+class marks:
+    def __init__(self,m1,m2,m3):
+        self.marks1=m1
+        self.marks2=m2
+        self.marks3=m3
+    def add(self):
+        self.total=self.marks1+self.marks2+self.marks3
+        return self.total
+    def avg(self):
+        self.average=self.total/3
+        return self.average
+obj1=marks(32,42,24)
+print("add",obj1.add())
+print("average",obj1.avg())
+
+petals program
+
+
+class Flower:
+    def __init__(self, name: str, petals: int, price: float):
+        self.name = name
+        self.petals = petals
+        self.price = price
+    
+    def set_name(self, name: str):
+        self.name = name
+    
+    def set_petals(self, petals: int):
+        self.petals = petals
+    
+    def set_price(self, price: float):
+        self.price = price
+    
+    def get_name(self) -> str:
+        return self.name
+    
+    def get_petals(self) -> int:
+        return self.petals
+    
+    def get_price(self) -> float:
+        return self.price
+# Create a new flower instance with name "Rose", 5 petals, and price $2.50
+flower = Flower("Rose", 5, 2.50)
+
+# Set the number of petals to 6
+flower.set_petals(6)
+
+# Get the name of the flower
+name = flower.get_name()
+print(name)  # Output: "Rose"
+
+# Get the price of the flower
+price = flower.get_price()
+print(price)  # Output: 2.5
+
+
+
+
+
+
+
+
+
+
+

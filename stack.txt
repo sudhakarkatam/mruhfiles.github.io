@@ -1,0 +1,146 @@
+def insert():
+	n=int(input("Enter the number"))
+	queue.append(n)
+def delete()
+	if queue==[]
+		print("queue underflow:)
+	else:
+		print("Deleted element is:",queue.pop(0))
+def display():
+	if queue==[]:
+		print("queue underflow:)
+	else:
+		print("elements in queue")
+		for i in queue:
+			print(i,end="")
+queue=[]
+while True:
+	print("\n queue operation")
+	print("1.Insert")
+	print("2.Delete")
+	print("3.DISPLAY")
+	print("4.EXIT")
+      ch==int(input("Enter your choice")
+	if ch==1:
+		push()
+	elif ch==2:
+		pop()
+	elif ch==3:
+		display()
+	elif ch==4:
+		break
+	else:
+		print("Invalid choice")
+
+
+
+
+
+STACK
+def push():
+	n=int(input("Enter the number"))
+	stack.append(n)
+def pop()
+	if stack==[]
+		print("stack underflow:)
+	else:
+		print("Deleted element is:",stack.pop())
+def display():
+	if stack==[]:
+		print("stack underflow:)
+	else:
+		print("elements in stack")
+		for i in stack:
+			print(i,end="")
+stack=[]
+while True:
+	print("\n Stack operation")
+	print("1.PUSH")
+	print("2.POP")
+	print("3.DISPLAY")
+	print("4.EXIT")
+      ch==int(input("Enter your choice")
+	if ch==1:
+		push()
+	elif ch==2:
+		pop()
+	elif ch==3:
+		display()
+	elif ch==4:
+		break
+	else:
+		print("Invalid choice")
+
+
+
+Multiple Inheritance 
+
+class ParentClass_1: 
+	def feature_1(self): 
+		print('feature_1 from ParentClass_1 is running...') 
+class ParentClass_2: 
+	def feature_2(self): 
+		print('feature_2 from ParentClass_2 is running...')
+class ChildClass(ParentClass_1, ParentClass_2): 
+	def feature_3(self): 
+		print('feature_3 from ChildClass is running...') 
+
+obj = ChildClass()
+obj.feature_1() 
+obj.feature_2() 
+obj.feature_3()
+
+
+
+Hierarchical Inheritance
+class ParentClass_1: 
+	def feature_1(self): 
+		print('feature_1 from ParentClass_1 is running...') 
+class ParentClass_2: 
+	def feature_2(self): 
+		print('feature_2 from ParentClass_2 is running...') 
+class ChildClass(ParentClass_1, ParentClass_2): 
+	def feature_3(self): 
+		print('feature_3 from ChildClass is running...') 
+obj = ChildClass()
+obj.feature_1() 
+obj.feature_2()
+obj.feature_3()
+
+
+Multi-Level Inheritance
+
+class ParentClass: 
+	def feature_1(self): 
+		print('feature_1 from ParentClass is running...') 
+class ChildClass_1(ParentClass): 
+	def feature_2(self): 
+		print('feature_2 from ChildClass_1 is running...')
+class ChildClass_2(ChildClass_1): 
+	def feature_3(self): 
+		print('feature_3 from ChildClass_2 is running...') 
+
+obj = ChildClass_2()
+obj.feature_1() 
+obj.feature_2() 
+obj.feature_3()
+
+
+Multi-Level Inheritance
+
+class ParentClass: 
+	def feature_1(self): 
+		print('feature_1 from ParentClass is running...') 
+class ChildClass_1(ParentClass): 
+	def feature_2(self): 
+		print('feature_2 from ChildClass_1 is running...')
+class ChildClass_2(ChildClass_1): 
+	def feature_3(self): 
+		print('feature_3 from ChildClass_2 is running...') 
+
+obj = ChildClass_2()
+obj.feature_1() 
+obj.feature_2() 
+obj.feature_3()
+
+
